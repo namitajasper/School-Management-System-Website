@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3e3e2;
+}
+
+
+h2 {
+    text-align: center;
+    color: #c27238;
+}
+
+
+.timetable {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #c27238;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+th, td {
+    border: 1px solid #c27238;
+    padding: 10px;
+    text-align: center;
+}
+
+
+th {
+    background-color: #c27238;
+    color: #fff;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
+.navbar {
+    background-color: #2b81a6;
+}
+
+
+/* Adjust the height of the todo-list to match the timetable */
+.todo-list {
+    height: auto;
+    min-height: 100%;
+}
+
+
+/* Set padding for even spacing and border for gallery images */
+.gallery img {
+    width: calc(33.33% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+
+/* Apply padding to request form */
+.request-query {
+    padding: 20px;
+}
+
+
+.view-notes-container,
+.take-quiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.view-notes,
+.take-quiz {
+    flex: 1;
+    background-color: #2b81a6;
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+
+.view-notes h2,
+.take-quiz h2 {
+    text-align: center;
+}
+
+
+.view-notes ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.view-notes ul li,
+.take-quiz div {
+    margin-bottom: 10px;
+}
+
+
+/* CSS for Evenly Sized Images in What's Happening Section */
+#image h2 {
+    margin-bottom: 15px;
+}
+
+
+#image p {
+    margin-bottom: 10px;
+}
+
+
+#image .col-md-3 {
+    text-align: center;
+}
+
+
+#image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+
+#image .col-md-3:hover img {
+    transform: scale(1.1);
+}
+
+
+#image p {
+    margin-bottom: 20px;
+}
+
+
+#image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.request-query {
+    background-color: #c27238;
+    color: #f0f0f0;
+}
+
+
