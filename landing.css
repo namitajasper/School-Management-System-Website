@@ -1,0 +1,179 @@
+/* Custom CSS for Phoenix Rising High School */
+
+
+/* General Styles */
+body {
+    background-color: #2f2d32; /* Dark blue background */
+    color: #e3e3e2; /* Light gray text */
+}
+
+
+/* Navbar Styles */
+.navbar-light {
+    background-color: #2b81a6; /* Blue navbar background */
+}
+
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+    color: #fff; /* White navbar text */
+}
+
+
+.nav-link.login-btn {
+    background-color: #c27238; /* Orange login button */
+    color: #fff; /* White login button text */
+}
+
+
+/* Hover Effect */
+.nav-link:hover {
+    color: #ffffff; /* Lighter shade for hover state on navigation links */
+}
+
+
+/* Section Specific Styles */
+.bg-orange {
+    background-color: #c27238; /* Orange background */
+}
+
+
+#who-are-we,
+#whats-happening {
+    color: #e3e3e2; /* Light gray text */
+    padding: 20px;
+}
+
+
+#who-are-we {
+    background-color: #3a718c; /* Blue background for 'Who Are We' section */
+}
+
+
+#whats-happening {
+    background-color: #2b81a6; /* Darker blue background for 'What's Happening' section */
+}
+
+
+/* Footer Styles */
+.footer,
+.address-section {
+    background-color: #874240; /* Purple footer background */
+    color: #e3e3e2; /* Light gray text */
+}
+
+
+.footer a {
+    color: #e3e3e2; /* Light gray footer links */
+}
+
+
+.footer a:hover {
+    color: #ffffff; /* White hover state for footer links */
+}
+
+
+/* Icon Styles */
+.icon {
+    color: #c27238; /* Orange icons */
+    display: block;
+    margin: auto; /* Center icons horizontally */
+}
+
+
+/* Image Styles */
+.full-width-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Add spacing below the full-width image */
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto; /* Ensure branch images are responsive */
+}
+
+
+/* Headings and Paragraphs */
+#whats-happening h2,
+#who-are-we h2 {
+    margin-bottom: 15px; /* Add some space below the headings */
+}
+
+
+#whats-happening p,
+#who-are-we p {
+    margin-bottom: 10px; /* Add some space below the paragraphs */
+}
+/* CSS for Who Are We Section */
+#who-are-we {
+    padding: 50px; /* Add padding on all sides */
+}
+
+
+/* CSS for Description in Icon Section */
+.icon-description {
+    margin-top: 10px; /* Add space between icons and descriptions */
+    text-align: center; /* Center align descriptions */
+}
+
+
+/* CSS for Evenly Sized Images in What's Happening Section */
+#whats-happening .col-md-3 {
+    text-align: center; /* Center align images */
+}
+
+
+#whats-happening img {
+    width: 100%; /* Ensure images fill their container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+
+#whats-happening .col-md-3:hover img {
+    transform: scale(1.1); /* Scale image on hover */
+}
+
+
+#whats-happening p {
+    margin-bottom: 20px; /* Add space below descriptions */
+}
+
+
+#whats-happening .col-md-3 {
+    text-align: center; /* Center align images */
+}
+
+
+#whats-happening img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+.image-link {
+    position: relative;
+    display: block;
+}
+
+
+.hover-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+
+.image-link:hover .hover-text {
+    opacity: 1; /* Show text on hover */
+}
+
+
