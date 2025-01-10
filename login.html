@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      background-color: #f4f4f4;
+    }
+/* Navbar Styles */
+.navbar-light {
+  background-color: #2b81a6; /* Blue navbar background */
+}
+
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link{
+  color: #fff; /* White navbar text */
+}
+
+
+.nav-link.login-btn {
+  background-color: #c27238; /* Orange login button */
+  color: #fff; /* White login button text */
+}
+
+
+/* Hover Effect */
+.nav-link:hover {
+  color: #ffffff; /* Lighter shade for hover state on navigation links */
+}
+
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .box {
+      max-width: 400px;
+      padding: 70px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 0 20px;
+    }
+    h2 {
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group button {
+      width: 100%;
+      padding: 20px;
+      background-color: #2b81a6;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-group button:hover {
+      background-color: #2b81a6;
+    }
+    .icon {
+      font-size: 48px;
+      color: #2b81a6;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    /* Reset Password Link */
+    .reset-password {
+      color: #999; /* Light gray text */
+      text-decoration: none;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .reset-password:hover {
+      text-decoration: underline; /* Underline on hover */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="pheonixlogo.png" alt="Pheonix Logo" height="50" class="mr-2">
+        Pheonix Rising High
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="landing.html" >Home</a>
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="#" >About</a>
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="admission.html" >Admissions</a>
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="#" >Contact</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link btn btn-warning text-white" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <!-- Login Box -->
+    <div class="box">
+      <div class="icon">
+        <i class="fas fa-user"></i> <!-- Generic User Icon -->
+      </div>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username/ID</label>
+          <input type="text" id="username" name="username" class="form-control" placeholder="Enter Username/ID" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+      </form>
+      <a href="reset.html" class="reset-password">Reset Password</a> <!-- Reset Password Link -->
+    </div>
+  </div>
+
+
+  <!-- Bootstrap JS, jQuery, Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#loginForm').submit(function(e){
+        e.preventDefault();
+        var username = $('#username').val();
+        var password = $('#password').val();
+        // Regular expression for password validation (at least 8 characters, at least one uppercase letter, one lowercase letter, one number, and one special character)
+        var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,}$/;
+ 
+        if(!passwordPattern.test(password)){
+          alert("Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.");
+          return;
+        }
+ 
+        // Assuming admin usernames are strings and student IDs are numbers
+        if(!isNaN(username)){ // If username is a number, treat as student ID
+          window.location.href = 'student.html'; // Replace 'student_page.html' with actual student page URL
+        } else {
+          window.location.href = 'adminfinal.html'; // Replace 'admin_page.html' with actual admin page URL
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
