@@ -1,1 +1,2 @@
 This project is created for a hypothetical school- Pheonix Rising High School. From admissions to a inbuilt quiz portal, this project has several screens and also accomodates to different users like admins(teachers) and students. The project also has attendence, about sections and much more about the school. It uses html, css, bootstrap, angular js and more . This project can be used as a boiler plate to create more and much more exciting things!
+![image](https://github.com/user-attachments/assets/02a34fe2-fba1-4427-bae5-9fba98361c8c)
