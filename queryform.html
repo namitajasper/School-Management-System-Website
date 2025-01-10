@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Department: Student's Query Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+
+    .container {
+      background-color: #ffffff;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+
+    label {
+      font-weight: bold;
+    }
+
+
+    .form-control {
+      margin-bottom: 20px;
+    }
+
+
+    textarea.form-control {
+      resize: none;
+    }
+
+
+    button[type="submit"] {
+      width: 100%;
+    }
+      /* Navbar Styles */
+      .navbar-light {
+        background-color: #2b81a6; /* Blue navbar background */
+    }
+
+
+    .navbar-light .navbar-brand,
+    .navbar-light .nav-link {
+        color: #fff; /* White navbar text */
+    }
+
+
+    .nav-link.login-btn {
+        background-color: #c27238; /* Orange login button */
+        color: #fff; /* White login button text */
+    }
+
+
+    /* Hover Effect */
+    .nav-link:hover {
+        color: #ffffff; /* Lighter shade for hover state on navigation links */
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="pheonixlogo.png" alt="Pheonix Logo" height="50" class="mr-2">
+            Pheonix Rising High
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item text-white">
+                <a class="nav-link text-white" href="landing.html" >Home</a>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link text-white" href="#" >About</a>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link text-white" href="admission.html" >Admissions</a>
+              </li>
+             
+              <li class="nav-item text-white">
+                <a class="nav-link text-white" href="#" >Contact</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link btn btn-warning text-white" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <div class="container">
+    <h1 class="mt-5">Rising High: Student's Query Form</h1>
+    <form id="studentQueryForm" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="sapId">SAP id *</label>
+        <input type="text" class="form-control" id="sapId" name="sapId" required>
+      </div>
+      <div class="form-group">
+        <label for="program">Board *</label>
+        <select class="form-control" id="program" name="program" required>
+          <option value="isc">ISC</option>
+          <option value="cbse">CBSE</option>
+          <option value="ib">I.B</option>
+          <option value="igcse">IGCSE</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="year">Year *</label>
+        <select class="form-control" id="year" name="year" required>
+          <option value="1st Year">1st Year</option>
+          <option value="2nd Year">2nd Year</option>
+          <option value="3rd Year">3rd Year</option>
+          <option value="4th Year">4th Year</option>
+          <option value="5th Year">5th Year</option>
+          <option value="6th Year">6th Year</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="contactNumber">Contact number *</label>
+        <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="studentEmail"> Email ID *</label>
+        <input type="email" class="form-control" id="studentEmail" name="studentEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="queryType">Type of Query *</label>
+        <select class="form-control" id="queryType" name="queryType" required>
+          <option value="Admission Related">Admission Related</option>
+          <option value="Admin Related">Admin Related (Leave application, Defaulter Undertaking, Any Password Reset, ID Card, Change in Mobile number)</option>
+          <option value="Exam Related">Exam Related</option>
+          <option value="Library Related">Library Related</option>
+          <option value="Bonafide Letter">Bonafide Letter</option>
+          <option value="Timetable">Timetable</option>
+          <option value="HoD Appointment">HoD Appointment</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="queryDetails">Details of Query *</label>
+        <textarea class="form-control" id="queryDetails" name="queryDetails" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="imageUpload">Upload image for clarity of issue</label>
+        <input type="file" class="form-control-file" id="imageUpload" name="imageUpload">
+      </div>
+      <div class="form-group">
+        <label for="additionalDocs">Additional Documents</label>
+        <input type="file" class="form-control-file" id="additionalDocs" name="additionalDocs">
+        <small class="form-text text-muted">Please upload relevant documents for your query.</small>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Query</button>
+    </form>
+  </div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
