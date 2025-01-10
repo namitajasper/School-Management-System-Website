@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="admission.css">
+</head>
+<body>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="pheonixlogo.png" alt="Pheonix Logo" height="50" class="mr-2">
+      Pheonix Rising High
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="landing.html" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about.html" >About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="admission.html" >Admissions</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#" >Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-warning text-white" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Admission Form Section -->
+  <section id="admission-form" class="py-5 bg-light">
+    <div class="container">
+      <div class="bg-warning p-3"><h2>Admission Form</h2>
+        <p>Welcome to Phoenix Rising High School, where your future takes flight!  Here, we believe in fostering a dynamic and supportive environment that ignites intellectual curiosity and empowers students to reach their full potential.  Our innovative approach to education, coupled with our dedicated faculty, creates a springboard for academic excellence and personal growth.  Are you a student driven by a desire to learn, collaborate, and become a leader?  If so, we invite you to explore the exciting admissions process at Phoenix Rising and discover how you can join our vibrant community.</p>
+        <form action="#" method="post" enctype="multipart/form-data"></div>
+     
+        <br>
+        <!-- Student Information -->
+        <h3>Student Information</h3>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="first-name">First Name</label>
+            <input type="text" class="form-control" id="first-name" name="first_name" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="middle-name">Middle Name</label>
+            <input type="text" class="form-control" id="middle-name" name="middle_name">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="last-name">Last Name / Surname</label>
+            <input type="text" class="form-control" id="last-name" name="last_name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="grade-applying">Grade Applying for</label>
+            <input type="text" class="form-control" id="grade-applying" name="grade_applying" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="current-grade">Current Grade of the Student</label>
+            <input type="text" class="form-control" id="current-grade" name="current_grade" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="academic-year">Academic Year Applying for</label>
+            <input type="text" class="form-control" id="academic-year" name="academic_year" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="preferred-campus">Preferred Campus</label>
+            <input type="text" class="form-control" id="preferred-campus" name="preferred_campus" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="dob">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" name="dob" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="gender">Gender</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+              <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+              <label class="form-check-label" for="female">Female</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+              <label class="form-check-label" for="female">Other</label>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="nationality">Nationality (As on Passport)</label>
+            <input type="text" class="form-control" id="nationality" name="nationality" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="aadhar-card">Student Aadhar Card No. (If not available, enter ‘0’)</label>
+          <input type="text" class="form-control" id="aadhar-card" name="aadhar_card" required>
+        </div>
+        <div class="form-group">
+          <label for="current-school">Current School</label>
+          <input type="text" class="form-control" id="current-school" name="current_school" required>
+        </div>
+
+
+        <!-- Parent/Guardian Details -->
+        <h3>Parent/Guardian Details</h3>
+        <div class="form-row">
+          <!-- Parent 1 -->
+          <div class="form-group col-md-4">
+            <label for="parent1-first-name">First Name</label>
+            <input type="text" class="form-control" id="parent1-first-name" name="parent1_first_name" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="parent1-middle-name">Middle Name</label>
+            <input type="text" class="form-control" id="parent1-middle-name" name="parent1_middle_name">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="parent1-last-name">Last Name / Surname</label>
+            <input type="text" class="form-control" id="parent1-last-name" name="parent1_last_name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="relationship1">Relationship to Applicant</label>
+            <input type="text" class="form-control" id="relationship1" name="relationship1" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="gender1">Gender</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender1" id="parent1-male" value="male">
+              <label class="form-check-label" for="parent1-male">Male</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender1" id="parent1-female" value="female">
+              <label class="form-check-label" for="parent1-female">Female</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+              <label class="form-check-label" for="female">Other</label>
+            </div>
+          </div>
+        </div>
+        <!-- Add more fields for parent 1 -->
+
+
+        <!-- Parent 2 -->
+        <h3>Parent/Guardian Details (Contd.)</h3>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="parent2-first-name">First Name</label>
+            <input type="text" class="form-control" id="parent2-first-name" name="parent2_first_name" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="parent2-middle-name">Middle Name</label>
+            <input type="text" class="form-control" id="parent2-middle-name" name="parent2_middle_name">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="parent2-last-name">Last Name / Surname</label>
+            <input type="text" class="form-control" id="parent2-last-name" name="parent2_last_name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="relationship2">Relationship to Applicant</label>
+            <input type="text" class="form-control" id="relationship2" name="relationship2" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="gender2">Gender</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender2" id="parent2-male" value="male">
+              <label class="form-check-label" for="parent2-male">Male</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender2" id="parent2-female" value="female">
+              <label class="form-check-label" for="parent2-female">Female</label>
+            </div>
+          </div>
+        </div>
+        <!-- Add more fields for parent 2 -->
+
+
+        <!-- Additional Information -->
+        <h3>Additional Information</h3>
+        <div class="form-group">
+          <label for="reason-relocating">Reason for Relocating to Mumbai? (If applicable)</label>
+          <textarea class="form-control" id="reason-relocating" name="reason_relocating" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="language-spoken">Language(s) Spoken at Home</label>
+          <input type="text" class="form-control" id="language-spoken" name="language_spoken">
+        </div>
+        <div class="form-group">
+          <label for="noteworthy-accomplishments">Noteworthy Accomplishments</label>
+          <textarea class="form-control" id="noteworthy-accomplishments" name="noteworthy_accomplishments" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="learning-information">Please share any further information for us to better understand the unique abilities, talents, and areas of growth for your child.</label>
+          <textarea class="form-control" id="learning-information" name="learning_information" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="special-needs">Does your child have any special learning or language needs?</label>
+          <select class="form-control" id="special-needs" name="special_needs">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="not-sure">Not Sure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="assessment">Has your child ever been assessed for developing delays?</label>
+          <select class="form-control" id="assessment" name="assessment">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="speech-hearing">Has your child ever had any speech or hearing concerns?</label>
+          <select class="form-control" id="speech-hearing" name="speech_hearing">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="applied-before">In the past, have you applied to the school by purchasing the application form?</label>
+          <select class="form-control" id="applied-before" name="applied_before">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="sibling-studying">Does the child have a sibling currently studying at OIS?</label>
+          <select class="form-control" id="sibling-studying" name="sibling_studying">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="student-photo">Student's Passport Sized Photograph (JPG/PNG)</label>
+          <input type="file" class="form-control-file" id="student-photo" name="student_photo" accept="image/jpeg, image/png" required>
+        </div>
+        <div class="form-group">
+          <label for="father-photo">Father's Passport Sized Photograph (JPG/PNG)</label>
+          <input type="file" class="form-control-file" id="father-photo" name="father_photo" accept="image/jpeg, image/png" required>
+        </div>
+        <div class="form-group">
+          <label for="mother-photo">Mother's Passport Sized Photograph (JPG/PNG)</label>
+          <input type="file" class="form-control-file" id="mother-photo" name="mother_photo" accept="image/jpeg, image/png" required>
+        </div>
+        <div class="form-group">
+          <label for="father-signature">Father's Scanned Signature (PDF)</label>
+          <input type="file" class="form-control-file" id="father-signature" name="father_signature" accept="application/pdf" required>
+        </div>
+        <div class="form-group">
+          <label for="mother-signature">Mother's Scanned Signature (PDF)</label>
+          <input type="file" class="form-control-file" id="mother-signature" name="mother_signature" accept="application/pdf" required>
+        </div>
+        <div class="form-group">
+          <label for="additional-documents">Additional Documents Required</label>
+          <input type="file" class="form-control-file" id="additional-documents" name="additional_documents" multiple>
+          <br><br>
+          <small class="form-text text-muted">For Std I to VIII only. You can upload multiple files.</small>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector('form');
+
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (validateForm()) {
+            this.submit();
+        }
+    });
+
+
+    function validateForm() {
+        const firstName = document.getElementById('first-name').value.trim();
+        const lastName = document.getElementById('last-name').value.trim();
+        const gradeApplying = document.getElementById('grade-applying').value.trim();
+        const currentGrade = document.getElementById('current-grade').value.trim();
+        const academicYear = document.getElementById('academic-year').value.trim();
+        const preferredCampus = document.getElementById('preferred-campus').value.trim();
+        const dob = document.getElementById('dob').value.trim();
+        const nationality = document.getElementById('nationality').value.trim();
+        const aadharCard = document.getElementById('aadhar-card').value.trim();
+        const currentSchool = document.getElementById('current-school').value.trim();
+        const parent1FirstName = document.getElementById('parent1-first-name').value.trim();
+        const parent1LastName = document.getElementById('parent1-last-name').value.trim();
+        const relationship1 = document.getElementById('relationship1').value.trim();
+        const parent2FirstName = document.getElementById('parent2-first-name').value.trim();
+        const parent2LastName = document.getElementById('parent2-last-name').value.trim();
+        const relationship2 = document.getElementById('relationship2').value.trim();
+        const studentPhoto = document.getElementById('student-photo').value.trim();
+        const fatherPhoto = document.getElementById('father-photo').value.trim();
+        const motherPhoto = document.getElementById('mother-photo').value.trim();
+        const fatherSignature = document.getElementById('father-signature').value.trim();
+        const motherSignature = document.getElementById('mother-signature').value.trim();
+
+
+        // Regular expressions
+        const nameRegex = /^[a-zA-Z]+$/;
+        const gradeRegex = /^[a-zA-Z0-9]+$/;
+        const dobRegex = /^\d{4}-\d{2}-\d{2}$/;
+        const aadharRegex = /^\d{12}$/;
+
+
+        // Validate each field
+        if (!nameRegex.test(firstName)) {
+            alert('Please enter a valid first name.');
+            return false;
+        }
+        if (!nameRegex.test(lastName)) {
+            alert('Please enter a valid last name.');
+            return false;
+        }
+        if (!gradeRegex.test(gradeApplying)) {
+            alert('Please enter a valid grade applying for.');
+            return false;
+        }
+        if (!gradeRegex.test(currentGrade)) {
+            alert('Please enter a valid current grade.');
+            return false;
+        }
+        if (!gradeRegex.test(academicYear)) {
+            alert('Please enter a valid academic year.');
+            return false;
+        }
+        if (!nameRegex.test(preferredCampus)) {
+            alert('Please enter a valid preferred campus.');
+            return false;
+        }
+        if (!dobRegex.test(dob)) {
+            alert('Please enter a valid date of birth (YYYY-MM-DD).');
+            return false;
+        }
+        if (!nameRegex.test(nationality)) {
+            alert('Please enter a valid nationality.');
+            return false;
+        }
+        if (!aadharRegex.test(aadharCard)) {
+            alert('Please enter a valid Aadhar card number (12 digits).');
+            return false;
+        }
+        if (!nameRegex.test(currentSchool)) {
+            alert('Please enter a valid current school.');
+            return false;
+        }
+        if (!nameRegex.test(parent1FirstName)) {
+            alert('Please enter a valid parent/guardian 1 first name.');
+            return false;
+        }
+        if (!nameRegex.test(parent1LastName)) {
+            alert('Please enter a valid parent/guardian 1 last name.');
+            return false;
+        }
+        if (!nameRegex.test(relationship1)) {
+            alert('Please enter a valid relationship to applicant for parent/guardian 1.');
+            return false;
+        }
+        if (!nameRegex.test(parent2FirstName)) {
+            alert('Please enter a valid parent/guardian 2 first name.');
+            return false;
+        }
+        if (!nameRegex.test(parent2LastName)) {
+            alert('Please enter a valid parent/guardian 2 last name.');
+            return false;
+        }
+        if (!nameRegex.test(relationship2)) {
+            alert('Please enter a valid relationship to applicant for parent/guardian 2.');
+            return false;
+        }
+        if (!studentPhoto) {
+            alert('Please upload the student\'s passport sized photograph.');
+            return false;
+        }
+        if (!fatherPhoto) {
+            alert('Please upload the father\'s passport sized photograph.');
+            return false;
+        }
+        if (!motherPhoto) {
+            alert('Please upload the mother\'s passport sized photograph.');
+            return false;
+        }
+        if (!fatherSignature) {
+            alert('Please upload the father\'s scanned signature.');
+            return false;
+        }
+        if (!motherSignature) {
+            alert('Please upload the mother\'s scanned signature.');
+            return false;
+        }
+
+
+        // If all validations pass
+        return true;
+    }
+});
+
+
+</script>
+  <!-- Bootstrap JS, jQuery, Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
