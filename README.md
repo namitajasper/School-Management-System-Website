@@ -4,3 +4,5 @@ This project is created for a hypothetical school—Pheonix Rising High School. 
 ![image](https://github.com/user-attachments/assets/b5ba56b1-e732-4321-aa9f-757bdcdf0ea6)
 ![image](https://github.com/user-attachments/assets/6b344b05-03ab-4664-9345-708069c65622)
 ![image](https://github.com/user-attachments/assets/fd3cbf91-15b2-4360-9f86-7e0526b8f283)
+![image](https://github.com/user-attachments/assets/51a48645-6f10-4d0c-9979-f2f76e7b5d91)
+![image](https://github.com/user-attachments/assets/8797a3b8-01bb-4949-8f2e-636d8f4647cb)
