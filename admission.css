@@ -1,0 +1,20 @@
+/* Navbar Styles */
+.navbar-light {
+    background-color: #2b81a6; /* Blue navbar background */
+}
+
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link{
+    color: #fff; /* White navbar text */
+}
+
+
+.nav-link.login-btn {
+    background-color: #c27238; /* Orange login button */
+    color: #fff; /* White login button text */
+}
+/* Hover Effect */
+.nav-link:hover {
+    color: #ffffff; 
+}
