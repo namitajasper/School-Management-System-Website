@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reset Password</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .popup-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    .popup-content {
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .input-group {
+      margin-bottom: 20px;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- Reset Password Popup -->
+<div class="popup-container" id="resetPasswordPopup">
+  <div class="popup-content">
+    <h2>Reset Password</h2>
+    <div class="input-group">
+      <label for="idOrUsername">ID (for students) or Username (for admins):</label>
+      <input type="text" id="idOrUsername" name="idOrUsername" required>
+    </div>
+    <div class="input-group">
+      <label for="currentPassword">Current Password:</label>
+      <input type="password" id="currentPassword" name="currentPassword" required>
+    </div>
+    <div class="input-group">
+      <label for="newPassword">New Password:</label>
+      <input type="password" id="newPassword" name="newPassword" required>
+    </div>
+    <div class="input-group">
+      <label for="confirmPassword">Retype New Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+    </div>
+    <button class="btn" onclick="resetPassword()">Reset Password</button>
+  </div>
+</div>
+
+
+<script>
+  function resetPassword() {
+    var newPassword = document.getElementById("newPassword").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+
+
+    if (!regex.test(newPassword)) {
+      alert("Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.");
+      return;
+    }
+
+
+    if (newPassword !== confirmPassword) {
+      alert("Passwords do not match!");
+      return;
+    }
+
+
+    // Perform further validation or submit the form
+    // For example, you can use AJAX to send the data to the server for processing
+
+
+    // After successful password reset, close the popup
+    document.getElementById("resetPasswordPopup").style.display = "none";
+    alert("Password reset successful!");
+  }
+
+
+  // Show the popup initially (for demonstration purposes)
+  document.getElementById("resetPasswordPopup").style.display = "flex";
+</script>
+
+
+</body>
+</html>
+
+
