@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+ 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"style="color:white">
+        <img src="pheonixlogo.png" alt="Pheonix Logo" height="50" class="mr-2">
+        Pheonix Rising High
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="landing.html" >Home</a>
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="about.html " >About</a>
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="admission.html" >Admissions</a>
+          </li>
+         
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="#" >Contact</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link btn btn-warning text-white" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- Timetable Section -->
+        <div class="timetable">
+          <h2>Student Timetable</h2>
+
+
+<table>
+  <tr>
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+  </tr>
+  <tr>
+    <td>08:00 - 09:00</td>
+    <td>Geography</td>
+    <td>Chemistry</td>
+    <td>Physics</td>
+    <td>Maths</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>09:00 - 10:00</td>
+    <td>History</td>
+    <td>Biology</td>
+    <td>Geography</td>
+    <td>Chemistry</td>
+    <td>Music</td>
+  </tr>
+  <tr>
+    <td>10:00 - 10:30</td>
+    <td colspan="5">Break</td>
+  </tr>
+  <tr>
+    <td>10:30 - 11:30</td>
+    <td>Physics</td>
+    <td>Maths</td>
+    <td>English</td>
+    <td>History</td>
+    <td>Geography</td>
+  </tr>
+  <tr>
+    <td>11:30 - 12:30</td>
+    <td>Chemistry</td>
+    <td>Music</td>
+    <td>Biology</td>
+    <td>Physics</td>
+    <td>Drama</td>
+  </tr>
+  <tr>
+    <td>12:30 - 13:00</td>
+    <td colspan="5">Lunch Break</td>
+  </tr>
+  <tr>
+    <td>13:00 - 14:00</td>
+    <td>Maths</td>
+    <td>English</td>
+    <td>History</td>
+    <td>Geography</td>
+    <td>Physical Education</td>
+  </tr>
+  <tr>
+    <td>14:00 - 15:00</td>
+    <td>Music</td>
+    <td>Drama</td>
+    <td>Physics</td>
+    <td>Chemistry</td>
+    <td>Biology</td>
+  </tr>
+  <tr>
+    <td>15:00 - 16:00</td>
+    <td>English</td>
+    <td>History</td>
+    <td>Geography</td>
+    <td>Maths</td>
+    <td>Hindi</td>
+  </tr>
+</table>
+         
+        </div>
+       
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <!-- View Notes and Take Quiz Section -->
+                  <div class="view-notes-container text-white">
+                      <div class="view-notes text-white">
+                          <h2>Upload Homework</h2>
+                          <!-- Add file upload inputs -->
+                          <form action="upload.php" method="post" enctype="multipart/form-data">
+                              <ul>
+                                  <li>
+                                      <label for="subject1">Chemistry Homework 11/4/24 (PDF):</label>
+                                      <input type="file" name="subject1" id="subject1" accept=".pdf">
+                                  </li>
+                                  <!-- Add more subjects as needed -->
+                              </ul>
+                              <input type="submit" value="Upload">
+                          </form>
+                      </div>
+     
+                      <div class="take-quiz">
+                          <h2>Take Quiz</h2>
+                          <!-- Change buttons to anchor tags -->
+                          <div>
+                              <h6 style="display: inline-block; margin-right: 10px;">History Practice Test</h6>
+                              <a href="test.html" class="btn btn-warning">Take Quiz</a>
+                          </div>
+     
+                          <div>
+                              <h6 style="display: inline-block; margin-right: 10px;">Biology Practice Test</h6>
+                              <a href="test2.html" class="btn btn-warning">Take Quiz</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+     
+     
+        <!-- What's Happening Section -->
+ 
+  <section id="image" class="py-5">
+    <div class="container-fluid">
+      <h2 class="mb-4">Current Events</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="student1.jpeg" alt="Event 1" class="img-fluid">
+          <br>
+          <p>Library Signup</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="student2.jpeg" alt="Event 2" class="img-fluid">
+          <br>
+          <p>Cafteria Menu</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="student3.jpeg" alt="Event 3" class="img-fluid">
+          <br>
+          <p>Extracirricular </p>
+        </div>
+      </div>
+    </div>
+  </section>  
+      </div>
+
+
+      <div class="col-md-4">
+        <!-- To-Do List Sidebar -->
+      <div class="todo-list" id="todo-list">
+        <h2>To-Do List</h2>
+       <!-- Tasks will be added dynamically here -->
+        <input type="text" id="new-task-input" placeholder="Add a new task">
+        <button id="add-task-btn">Add Task</button>
+      </div>
+        <br><br>
+       
+        <!-- Apply Request Form -->
+        <div class="request-query">
+  <h3>Request Student Query Form</h3><br>
+  <a class="btn btn-light" href="query.html">Apply Form</a>
+</div>
+
+
+      </div>
+     
+    </div>
+  </div>
+
+
+  <!-- Bootstrap JS, jQuery, Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const todoList = document.querySelector('.todo-list');
+      const addTaskBtn = document.getElementById('add-task-btn');
+      const newTaskInput = document.getElementById('new-task-input');
+     
+      // Load tasks from localStorage
+      loadTasks();
+     
+      // Add event listener for adding tasks
+      addTaskBtn.addEventListener('click', function() {
+        const taskText = newTaskInput.value.trim();
+        if (taskText !== '') {
+          addTask(taskText);
+          newTaskInput.value = ''; // Clear input field after adding task
+          saveTasks(); // Save tasks to localStorage
+        }
+      });
+     
+      // Add event listener for checkboxes (event delegation)
+      todoList.addEventListener('change', function(event) {
+        const checkbox = event.target;
+        if (checkbox.type === 'checkbox') {
+          const label = checkbox.nextElementSibling;
+          label.style.textDecoration = checkbox.checked ? 'line-through' : 'none';
+          saveTasks(); // Save tasks to localStorage
+        }
+      });
+     
+      // Add event listener for delete icons (event delegation)
+      todoList.addEventListener('click', function(event) {
+        const deleteIcon = event.target;
+        if (deleteIcon.classList.contains('delete-task')) {
+          const listItem = deleteIcon.parentElement;
+          listItem.remove();
+          saveTasks(); // Save tasks to localStorage
+        }
+      });
+     
+      // Function to add a new task to the to-do list
+      function addTask(taskText) {
+        const div = document.createElement('div'); // Change li to div
+        div.className = 'task';
+        div.innerHTML = `
+          <input type="checkbox">
+          <label>${taskText}</label>
+          <span class="delete-task">❌</span>
+        `;
+        todoList.appendChild(div);
+      }
+     
+      // Function to save tasks to localStorage
+      function saveTasks() {
+        const tasks = [];
+        todoList.querySelectorAll('.task').forEach(function(task) { // Adjusted selector
+          const taskText = task.querySelector('label').textContent;
+          const isCompleted = task.querySelector('input[type="checkbox"]').checked;
+          tasks.push({ text: taskText, completed: isCompleted });
+        });
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+      }
+     
+      // Function to load tasks from localStorage
+      function loadTasks() {
+        const tasks = JSON.parse(localStorage.getItem('tasks'));
+        if (tasks) {
+          tasks.forEach(function(task) {
+            addTask(task.text);
+            const checkbox = todoList.querySelector('input[type="checkbox"]');
+            checkbox.checked = task.completed;
+            if (task.completed) {
+              checkbox.nextElementSibling.style.textDecoration = 'line-through';
+            }
+          });
+        }
+      }
+    });
+  </script>
+ 
+</body>
+</html>
+
+
